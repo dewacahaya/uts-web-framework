@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    @include('components.navbar')
+    @include('components.navbarp')
     <div class="px-5 py-5">
         @if (session('created'))
             <div class="alert alert-success" role="alert">
@@ -72,6 +72,7 @@
                     </tbody>
                 </table>
                 <hr>
+                {{ $pelanggan->links() }}
             </div>
         </div>
 
@@ -98,4 +99,3 @@
         }
     </script>
 @endpush
-@include('components.footer')

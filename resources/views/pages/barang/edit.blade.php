@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+    @include('components.navbar')
     <div class="px-5 py-5">
         <div class="card">
             <div class="card-body">

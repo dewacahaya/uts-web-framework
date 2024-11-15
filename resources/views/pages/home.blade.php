@@ -54,31 +54,45 @@
         <h1 class="mb-4 text-center">Dashboard Home</h1>
 
         <div class="row">
-            <!-- Card Jumlah Total Barang -->
+
+
             <div class="col-md-6 mb-4">
                 <div class="card card-custom bg-info text-white shadow-sm">
                     <div class="card-body text-center">
                         <h4>Jumlah Total Barang</h4>
                         <h1>{{ $jumlahBarang }}</h1>
                     </div>
+                    <a href="{{ route('barang.index') }}">
+                        <button class="btn btn-light ms-2 mb-2">Lihat Lainnya</button>
+                    </a>
                 </div>
             </div>
 
-            <!-- Card Jumlah Total Pelanggan -->
+
             <div class="col-md-6 mb-4">
                 <div class="card card-custom bg-warning text-white shadow-sm">
+
                     <div class="card-body text-center">
                         <h4>Jumlah Total Pelanggan</h4>
-                        <h1>{{ $jumlahBarang }}</h1>
+                        <h1>{{ $jumlahPelanggan }}</h1>
                     </div>
+                    <a href="{{ route('pelanggan.index') }}">
+                        <button class="btn btn-light ms-2 mb-2">Lihat Lainnya</button>
+                    </a>
                 </div>
             </div>
+
         </div>
 
 
-        @include('components.footer')
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         @stack('js')
+        <footer class="bg-dark-subtle text-center fixed-bottom p-3">
+            <h1 class="fs-2 mt-3">UTS Web Programming</h1>
+            <p class="text-muted mb-3">Copyright &copy; Dewa Cahaya - Decay - 2024</p>
+        </footer>
+
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    @include('components.navbar')
+    @include('components.navbarp')
     <div class="px-5 py-5">
         <div class="card">
             <div class="card-body">
@@ -48,5 +48,4 @@
         </div>
 
     </div>
-    @include('components.footer')
 @endsection

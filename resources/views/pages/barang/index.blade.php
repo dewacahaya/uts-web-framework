@@ -95,4 +95,3 @@
         }
     </script>
 @endpush
-@include('components.footer')

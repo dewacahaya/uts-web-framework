@@ -31,6 +31,6 @@ class BarangSeeder extends Seeder
         // ]);
 
         // MEMBUAT DATA DUMMY BARANG MENGGUNAKAN FACTORY BARANG
-        // Barang::factory()->count(100)->create();
+        Barang::factory()->count(10)->create();
     }
 }

@@ -46,6 +46,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     @stack('js')
+
+    <footer class="bg-dark-subtle text-center p-3">
+        <h1 class="fs-2 mt-3">UTS Web Programming</h1>
+        <p class="text-muted mb-3">Copyright &copy; Dewa Cahaya - Decay - 2024</p>
+    </footer>
+
+
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Barang;
+use App\Models\Pelanggan2301010032;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -16,9 +17,10 @@ class HomeController extends Controller
 
         // Menghitung jumlah total data barang
         $jumlahBarang = Barang::count();
+        $jumlahPelanggan = Pelanggan2301010032::count();
 
         // Mengirimkan data ke view home
-        return view('pages.home', compact('barang', 'jumlahBarang'));
+        return view('pages.home', compact('barang', 'jumlahBarang', 'jumlahPelanggan'));
     }
 
     /**
